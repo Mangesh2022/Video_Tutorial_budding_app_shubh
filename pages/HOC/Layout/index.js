@@ -1,6 +1,5 @@
-import Header from "../../Components/Header";
-import Footer from "../../Components/Footer";
-import Home from "../../Components/Home";
+import Footer from "../Footer/index";
+import Header from "../Header/index";
 
 const Layout = (props) => {
   return (

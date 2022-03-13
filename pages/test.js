@@ -2,7 +2,7 @@ import Dashboard from "./Private/Dashboard/index";
 
 const Test = () => {
   return (
-    <div className="my-14">
+    <div className="my-12">
       <Dashboard />
     </div>
   );

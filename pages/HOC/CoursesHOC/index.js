@@ -86,14 +86,15 @@ const CoursesHOC = (props) => {
   const no = parseInt(props.Cardno);
   return (
     <div className="w-full  ">
-      <div className=" my-10 mb-10 container md:flex-wrap flex-nowrap mx-auto flex flex-col justify-center ">
+      <div className=" my-10 mb-10 container md:flex-wrap flex-wrap mx-auto flex flex-col justify-center ">
         <div className="flex justify-items-center  mx-2  flex-wrap flex-row">
           {Course_Data &&
             Course_Data.map(
               (data, index) =>
                 index < no && (
                   <CourseCards
-                    width="1/4"
+                    // width="1/4"
+                    size={data.sm}
                     id={data.id}
                     title={data.title}
                     author={data.author}

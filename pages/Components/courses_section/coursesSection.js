@@ -1,5 +1,6 @@
 import Button from "../Button/index";
 import CoursesHOC from "../../HOC/CoursesHOC/index";
+import CourseCards from "../../Sections/Course_card_section/Course_cards";
 
 export const Course_Data = [
   {
@@ -86,7 +87,7 @@ export const Course_Data = [
 
 const CoursesSection = () => {
   return (
-    <div className="w-full md:mx-auto md:container md:justify-center ">
+    <div className="w-full md:mx-auto  md:justify-center ">
       <div className=" my-24 mb-10 mx-4  flex flex-col justify-between  ">
         <div className="flex justify-center text-gray-700 text-3xl font-semibold tracking-wide w-full">
           Courses & Live Projects
@@ -123,8 +124,21 @@ const CoursesSection = () => {
             </div>
           </div>
         </div>
-        <div className="">
-          <CoursesHOC Cardno="8" />
+        <div className="w-auto">
+          <div className="flex justify-center align-middle text-center items-center  mx-auto  flex-wrap flex-row">
+            {Course_Data &&
+              Course_Data.map((data) => (
+                <CourseCards
+                  id={data.id}
+                  title={data.title}
+                  author={data.author}
+                  subject={data.subject}
+                  module={data.module}
+                  session={data.session}
+                  Course_Cover_source={data.Course_Cover_source}
+                />
+              ))}
+          </div>
         </div>
 
         {/* <div className="mx-24 my-44">

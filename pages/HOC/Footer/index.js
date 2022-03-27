@@ -5,13 +5,13 @@ const Footer = () => {
         <div className="w-full flex md:flex-row flex-col ">
           <div className="md:w-2/5 my-8 w-full flex flex-col justify-center align-middle items-center text-center ">
             <div className="justify-center align-middle items-center text-center w-52  md:w-52 h-52 ">
-              <img src="images/Logo.jpg" alt="logoimg" />
+              <img src="/images/Logo.jpg" alt="logoimg" />
             </div>
             <div className="flex flex-row justify-center align-middle items-center text-center">
-              <img src="images/fb.svg" alt="logoimg" className="mx-8  w-8" />
-              <img src="images/p.svg" alt="logoimg" className="mr-8 w-8" />
-              <img src="images/yt.svg" alt="logoimg" className="mr-8 w-8" />
-              <img src="images/li.svg" alt="logoimg" className="mr-8 w-8" />
+              <img src="/images/fb.svg" alt="logoimg" className="mx-8  w-8" />
+              <img src="/images/p.svg" alt="logoimg" className="mr-8 w-8" />
+              <img src="/images/yt.svg" alt="logoimg" className="mr-8 w-8" />
+              <img src="/images/li.svg" alt="logoimg" className="mr-8 w-8" />
             </div>
           </div>
           <div className="md:w-3/5 mx-4 flex flex-row text-gray-700 tracking-wider text-xl justify-between align-middle items-start text-left">

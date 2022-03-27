@@ -8,7 +8,7 @@ const Course_Data = [
     subject: "Finance management",
     module: "12",
     session: "50",
-    Course_Cover_source: "images/Heroimg3.jpg",
+    Course_Cover_source: "/images/Heroimg3.jpg",
     isFeatured: false,
   },
   {
@@ -18,7 +18,7 @@ const Course_Data = [
     subject: "Finance management",
     module: "12",
     session: "50",
-    Course_Cover_source: "images/Heroimg3.jpg",
+    Course_Cover_source: "/images/Heroimg3.jpg",
     isFeatured: false,
   },
   {
@@ -28,7 +28,7 @@ const Course_Data = [
     subject: "Finance management",
     module: "12",
     session: "50",
-    Course_Cover_source: "images/Heroimg3.jpg",
+    Course_Cover_source: "/images/Heroimg3.jpg",
     isFeatured: false,
   },
   {
@@ -38,7 +38,7 @@ const Course_Data = [
     subject: "Finance management",
     module: "12",
     session: "50",
-    Course_Cover_source: "images/Heroimg3.jpg",
+    Course_Cover_source: "/images/Heroimg3.jpg",
     isFeatured: false,
   },
   {
@@ -48,7 +48,7 @@ const Course_Data = [
     subject: "Finance management",
     module: "12",
     session: "50",
-    Course_Cover_source: "images/Heroimg3.jpg",
+    Course_Cover_source: "/images/Heroimg3.jpg",
     isFeatured: false,
   },
   {
@@ -58,7 +58,7 @@ const Course_Data = [
     subject: "Finance management",
     module: "12",
     session: "50",
-    Course_Cover_source: "images/Heroimg3.jpg",
+    Course_Cover_source: "/images/Heroimg3.jpg",
     isFeatured: false,
   },
   {
@@ -68,7 +68,7 @@ const Course_Data = [
     subject: "Finance management",
     module: "12",
     session: "50",
-    Course_Cover_source: "images/Heroimg3.jpg",
+    Course_Cover_source: "/images/Heroimg3.jpg",
     isFeatured: false,
   },
   {
@@ -78,7 +78,7 @@ const Course_Data = [
     subject: "Finance management",
     module: "12",
     session: "50",
-    Course_Cover_source: "images/Heroimg3.jpg",
+    Course_Cover_source: "/images/Heroimg3.jpg",
     isFeatured: false,
   },
 ];
@@ -143,12 +143,17 @@ const Dashboard = () => {
                 My courses
               </div>
               <div>
-                <Button type="primery">View All</Button>
+                <Button
+                  type="primary"
+                  className="bg-green-600 text-white cursor-pointer py-1 px-4"
+                >
+                  View All
+                </Button>
               </div>
             </div>
-            <div className="w-ful justify-between  mt-4">
+            <div className=" justify-between  mt-4">
               <div className="flex flex-row mx-2 my-2">
-                <div className="w-full">
+                <div className="">
                   {Course_Data.map(
                     (data, index) =>
                       index < 1 && (
@@ -202,7 +207,12 @@ const Dashboard = () => {
                 Popular courses
               </div>
               <div>
-                <Button type="primery">View All</Button>
+                <Button
+                  type="primary"
+                  className="bg-green-600 text-white cursor-pointer py-1 px-4"
+                >
+                  View All
+                </Button>
               </div>
             </div>
             <div className="w-ful justify-between  ">
